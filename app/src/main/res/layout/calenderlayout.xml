@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:layout_above="@+id/bottom_navigation"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/mydate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" my calender"
+        android:textAlignment="center"
+        android:textColor="@color/teal"
+        android:textSize="38sp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        />
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        app:headerColor="@color/black"
+        app:disabledDaysLabelsColor="@color/teal"
+        app:todayLabelColor="@color/teal"
+        app:daysLabelsColor="@color/white"
+        app:abbreviationsBarColor="@color/black"
+        app:highlightedDaysLabelsColor="@color/white"
+        app:abbreviationsLabelsColor="@color/white"
+        app:selectionColor="@color/white"
+        app:selectionLabelColor="@color/white"
+        app:pagesColor="@color/black"
+        app:headerLabelColor="@color/teal">
+
+    </com.applandeo.materialcalendarview.CalendarView>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/black"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/teal"
+        app:menu="@menu/menu_navigation"
+        android:layout_marginTop="120dp"
+
+        />
+
+
+
+</LinearLayout>
